@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HELLO</title>
+        <!-- Which mean all of h1 tag will show in this color and this text align-->
+        <!--style>
+            h1{
+                color: #3E6609;
+                text-align: left;
+            }
+        </style-->
+        <!-- In order to put the style in html file you can link the css file in this html file so that will make yur html cleaner-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Heading Size -->
+        <!-- h1 is the largest size-->
+        <h1>This is the Heading</h1>
+        <!-- h6 is the smallest size-->
+        <h6>This is the smallest heading</h6>
+        Hello, world!<br>
+
+        An Ordered List:
+        <!-- The tag that use for Ordered list is <ol> -->
+        <ol>
+            <!-- the list element use <li> tag for each element inside the ordered list-->
+            <li>First Element</li>
+            <li>Second Element</li>
+            <li>Third Element</li>
+        </ol>
+
+        An Unordered List:
+        <!-- The tag that use for Unordered list is <ul> -->
+            <ul>
+                <!-- the list element use <li> tag for each element inside the unordered list-->
+                <li>First Bullet</li>
+                <li>Second Bullet</li>
+                <li>Third Bullet</li>
+            </ul>
+        
+        Image:
+        <!-- The tag that use for displaying the image is <img> -->
+            <!-- src refer to source and alt refer to alternative text that show in image when the browser cannot download the picture-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1920px-Cat_August_2010-4.jpg" alt ="This is a cat picture" width="300"><br>
+
+        Link:
+        <!-- This is the tag for link <a>, href refer to hyper reference -->
+        <!-- This mean in the web page will show the GOOGLE text and this text link top google-->
+        <a href="https:/google.com">GOOGLE</a><br>
+
+        Table:
+        <!-- This is the tag for create a table <table>-->
+        <table>
+            <!-- thead = object TABLE HEAD-->
+            <thead>
+                <!-- tr = tabkle row and th = data in table head-->
+                <tr>
+                    <th>DATE</th>
+                    <th>TIME</th>
+                    <th>DESCRIPTION</th>
+                </tr>
+            </thead>
+            <!-- tbody = object table body-->
+            <tbody>
+                <tr>
+                    <!-- td = table data -->
+                    <td>09/03/2023</td>
+                    <td>13:00:00</td>
+                    <td>The lunch is done!</td>
+                </tr>
+                <tr>
+                    <td>10/03/2023</td>
+                    <td>17:00:00</td>
+                    <td>The lunch was done!</td>
+                </tr>
+            </tbody>
+        </table><br>
+
+        Form:
+        <!-- This is the tag for create an area for type <form>-->
+        <form>
+            <!-- the input tag use for collect the input from user and also give the type of input -->
+            <input type="text" placeholder="Full Name" name="name">
+            <input type="submit">
+        </form><br>
+
+        <div>
+            <!-- where the style in that object should adapt-->
+            <h1>Please insert your password!</h1>
+            <input name="PASS" type="password" placeholder="password"><br>
+            GENDER
+            <input name="GENDER" type="radio" value="MALE" >MALE
+            <input name="GENDER" type="radio" value="MALE" >FEMALE
+            <input name="GENDER" type="radio" value="MALE" >OTHER<br>
+            COUNTRY
+            <input name="COUNTRY" list="countries" placeholder="Country">
+            <datalist id="countries">
+                <option value="Thailand">
+                <option value="Australia">
+                <option value="New Zealand">    
+                </option>
+                </option>
+                </option>
+            </datalist>
+        </div>
+        
+        <!-- id is unique name but the class is not unique name-->
+        <h1 id = "one">HEADING 1</h1>
+        <h1 id = "two">HEADING 2</h1>
+        <h1 id = "three">HEADING 3</h1>
+
+        <h3 class = "MEZ">NEXT</h3>
+        <h3 class = "MEZ">CHAPTER</h3>
+        <h3>MODULE</h3>
+    </body>
+</html>

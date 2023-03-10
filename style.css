@@ -1,0 +1,58 @@
+h1{
+    color: brown;
+    text-align: center;
+    border: 3px solid cornflowerblue;
+}
+/* # is mean id so in this line mean choose the id name = form*/
+
+div {
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  ;
+    background-color: rgb(248, 200, 136);
+    height: 200px;
+    width: 400px;
+    /*Inside in the element*/
+    padding: 20px;
+    /*Outside in the element*/
+    margin: 20px;
+}
+
+table{
+    border: 1px solid green;
+    border-collapse: collapse;
+}
+
+/*
+td{ 
+    border: 1px solid green;
+}
+
+th{ 
+    border: 1px solid green;
+}
+*/
+
+/* use this for avoid redundancy function */
+td, th{ 
+    border: 1px solid green;
+    padding: 5px;
+}
+
+#one{
+    color: coral;
+    border: 1px solid black;
+}
+
+#two{
+    color: darkgreen;
+    border: 1px solid black;
+}
+
+#three{
+    color: darkviolet;
+    border: 1px solid black;
+}
+
+.MEZ{
+    color: lightcoral;
+}

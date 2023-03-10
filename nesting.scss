@@ -1,0 +1,14 @@
+/* This coding show how to style the tag inside div in scss so in css you can use the child selector div > ul 
+   but in scss you can do follow below code*/
+
+div{
+    font-size:  18px;
+
+    p{
+        color: aquamarine;
+    }
+
+    ul{
+        color: brown;
+    }
+}
