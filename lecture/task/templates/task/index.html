@@ -1,0 +1,14 @@
+{% extends "task/layout.html" %}
+
+{% block body %}
+    <ul>
+        {% for i in task %}
+            <li>{{ i }}</li>
+        {% empty %}
+            <li>No tasks.</li>
+        {% endfor %}
+    </ul>
+    <!-- name from urls.py -->
+    <!-- in task app from app name, link to add name-->
+    <a href="{% url 'task:add' %}">Add a new task</a>
+{% endblock %}

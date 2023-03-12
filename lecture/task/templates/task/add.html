@@ -1,0 +1,13 @@
+{% extends "task/layout.html" %}
+
+{% block body %}
+    <h1>Add Task</h1>
+    <form action="{% url 'task:add' %}" method="post">
+        {% csrf_token %}
+        <!--input type="text" name="task"-->
+        {{ form }}
+        <input type="submit">
+    </form>
+    <!-- in task app from app name, link to index name-->
+    <a href="{% url 'task:index' %}">View Task</a>
+{% endblock %}
