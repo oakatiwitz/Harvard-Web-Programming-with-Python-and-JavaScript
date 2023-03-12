@@ -1,0 +1,12 @@
+h1{
+    background-color: aquamarine;
+    color: brown;
+}
+
+ul{
+    background-color: darkgreen;
+}
+
+ul >li {
+    color: brown;
+}
