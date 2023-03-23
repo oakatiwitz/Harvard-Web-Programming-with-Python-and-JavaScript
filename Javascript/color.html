@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>Colors</title>
+        <style>
+            body{
+                background-color: bisque;
+            }
+        </style>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function(){
+
+                /*
+                // Change font color to red
+                document.querySelector('#red').onclick = function(){
+                    document.querySelector('#hello').style.color = 'red';
+                }
+
+                // Change font color to blue
+                document.querySelector('#blue').onclick = function(){
+                    document.querySelector('#hello').style.color = 'blue';
+                }
+
+                // Change font color to green
+                document.querySelector('#green').onclick = function(){
+                    document.querySelector('#hello').style.color = 'green';
+                }
+                */
+                
+
+                /*
+                document.querySelectorAll('button').forEach(function(button) {
+                    button.onclick = function(){
+                        document.querySelector('#hello').style.color = button.dataset.color
+                    }
+                });
+                */
+
+                // you can use this symbol => instead of using function() 
+                // if the function doesn't has input use () =>
+                // if the function doesn't has input use input =>
+                document.querySelectorAll('button').forEach(button => {
+                    button.onclick = function(){
+                        document.querySelector('#hello').style.color = button.dataset.color;
+                    }
+                });
+
+                document.querySelector('select').onchange = function() {
+                    // "this" refer to the thing that is received from event
+                    // in this case refer to 'select'  
+                    document.querySelector('#hello').style.color = this.value;
+                };
+
+            });
+        </script>
+    </head>
+    <body>
+        <h1 id="hello">Hello!</h1>
+        <!--
+        <button id="red">Red</button>
+        <button id="blue">Blue</button>
+        <button id="green">Green</button>
+        -->
+        <button data-color="red">Red</button>
+        <button data-color="blue">Blue</button>
+        <button data-color="green">Green</button>
+        <br><br>
+        <select>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+        </select>
+    </body>
+</html>
